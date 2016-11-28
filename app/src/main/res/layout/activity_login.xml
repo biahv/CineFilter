@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.edu.iff.pooa20162.cinefilter.LoginActivity">
+
+    <TextView
+        android:text="E-mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailTxt" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailEdt" />
+
+    <TextView
+        android:text="Senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/senhaTxt" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/senhaEdt" />
+
+    <Button
+        android:text="Entrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/entrarBtn" />
+
+    <Button
+        android:text="Esqueceu sua Senha?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/esqSenhaBtn" />
+
+    <Button
+        android:text="Novo Por Aqui?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/novoBtn" />
+
+</LinearLayout>
+
+
+
+
+
+
