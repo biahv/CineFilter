@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_novo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.edu.iff.pooa20162.cinefilter.NovoActivity">
+    <TextView
+        android:text="Dados Cadastrais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/usuarioEdt"
+                android:layout_marginLeft="31dp"
+                android:layout_marginStart="31dp"
+                android:layout_alignBaseline="@+id/usuarioTxt"
+                android:layout_alignBottom="@+id/usuarioTxt"
+                android:layout_toRightOf="@+id/usuarioTxt"
+                android:layout_toEndOf="@+id/usuarioTxt" />
+            <TextView
+                android:text="Nome Usuário:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:id="@+id/usuarioTxt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_below="@+id/nomeEdt"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:text="Sexo:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usuarioEdt"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="19dp"
+                android:id="@+id/sexoTxt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+            <TextView
+                android:text="Senha:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailTxt"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="33dp"
+                android:id="@+id/senhaTxt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:text="Feminino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/sexoTxt"
+                    android:layout_alignLeft="@+id/emailEdt"
+                    android:layout_alignStart="@+id/emailEdt"
+                    android:id="@+id/femininoBtn" />
+                <RadioButton
+                    android:text="Masculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/masculinoBtn"
+                    android:layout_below="@+id/femininoBtn"
+                    android:layout_alignLeft="@+id/femininoBtn"
+                    android:layout_alignStart="@+id/femininoBtn"
+                    android:layout_marginTop="12dp" />
+            </RadioGroup>
+            <TextView
+                android:text="E-mail: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailTxt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_alignBaseline="@+id/emailEdt"
+                android:layout_alignBottom="@+id/emailEdt"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/emailEdt"
+                android:layout_below="@+id/masculinoBtn"
+                android:layout_centerHorizontal="true" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/senhaEdt"
+                android:layout_below="@+id/emailEdt"
+                android:layout_alignLeft="@+id/emailEdt"
+                android:layout_alignStart="@+id/emailEdt" />
+            <TextView
+                android:text="Nome:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nomeTxt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_alignBaseline="@+id/nomeEdt"
+                android:layout_alignBottom="@+id/nomeEdt"
+                android:layout_alignRight="@+id/emailTxt"
+                android:layout_alignEnd="@+id/emailTxt" />
+            <Button
+                android:text="Salvar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/salvarBtn"
+                android:layout_marginTop="31dp"
+                android:layout_below="@+id/confirmarEdt"
+                android:layout_alignLeft="@+id/confirmarEdt"
+                android:layout_alignStart="@+id/confirmarEdt" />
+            <TextView
+                android:text="Confirmar Senha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmarTxt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_above="@+id/salvarBtn"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/confirmarEdt"
+                android:layout_below="@+id/senhaEdt"
+                android:layout_alignLeft="@+id/usuarioEdt"
+                android:layout_alignStart="@+id/usuarioEdt" />
+        </RelativeLayout>
+    </ScrollView>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nomeEdt"
+        android:layout_toRightOf="@+id/usuarioTxt"
+        android:layout_toEndOf="@+id/usuarioTxt" />
+</RelativeLayout>
