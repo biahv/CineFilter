@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_senha"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="br.edu.iff.pooa20162.cinefilter.SenhaActivity">
 
     <TextView
@@ -23,14 +20,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
     <TextView
         android:text="Nome Usuário:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_marginTop="43dp"
         android:id="@+id/nUsuarioTxt"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
@@ -39,42 +37,38 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_below="@+id/textView2"
-        android:layout_alignRight="@+id/textView2"
-        android:layout_alignEnd="@+id/textView2"
-        android:layout_marginTop="28dp"
         android:id="@+id/usuarioEdt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
     <TextView
         android:text="Nova Senha: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
         android:id="@+id/novaSenhaTxt"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:layout_below="@+id/usuarioEdt"
-        android:layout_alignLeft="@+id/nUsuarioTxt"
-        android:layout_alignStart="@+id/nUsuarioTxt" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/novaSenhaEdt"
-        android:layout_alignBaseline="@+id/novaSenhaTxt"
-        android:layout_alignBottom="@+id/novaSenhaTxt"
-        android:layout_toRightOf="@+id/nUsuarioTxt"
-        android:layout_toEndOf="@+id/nUsuarioTxt" />
+        android:id="@+id/novaSenhaEdt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
     <TextView
         android:text="Confirmar Senha:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/novaSenhaEdt"
-        android:layout_alignLeft="@+id/novaSenhaTxt"
-        android:layout_alignStart="@+id/novaSenhaTxt"
-        android:layout_marginTop="32dp"
         android:id="@+id/confirmarNovoTxt"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
@@ -83,22 +77,20 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:layout_below="@+id/novaSenhaEdt"
-        android:layout_alignLeft="@+id/usuarioEdt"
-        android:layout_alignStart="@+id/usuarioEdt"
-        android:layout_marginLeft="14dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="17dp"
         android:id="@+id/confirmarNovoEdt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
     <Button
         android:text="Salvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/confirmarNovoEdt"
-        android:layout_toRightOf="@+id/confirmarNovoTxt"
-        android:layout_toEndOf="@+id/confirmarNovoTxt"
         android:layout_marginTop="35dp"
         android:id="@+id/salvarSenhaBtn" />
+     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
