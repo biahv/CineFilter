@@ -8,34 +8,51 @@
     android:orientation="vertical"
     tools:context="br.edu.iff.pooa20162.cinefilter.PrincipalActivity">
 
-
-    <ImageButton
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/filme"
-        android:id="@+id/imageButton" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/cinema"
-        android:id="@+id/imageButton2" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/cinema"
+                android:id="@+id/imageCinema" />
 
-    <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/pesquisa"
-        android:id="@+id/imageButton3" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/filme"
+                android:id="@+id/imageFilme" />
 
-    <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/configuracao"
-        android:id="@+id/imageButton4" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/todos"
+                android:id="@+id/imageSessao" />
 
-    <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/sair"
-        android:id="@+id/imageButton5" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/pesquisa"
+                android:id="@+id/imagePesquisa" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/configuracao"
+                android:id="@+id/imageConfiguracao" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/sair"
+                android:id="@+id/imageSair" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

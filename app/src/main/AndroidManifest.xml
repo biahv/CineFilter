@@ -24,7 +24,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".NovoActivity" />
-        <activity android:name=".SenhaActivity"></activity>
+        <activity android:name=".SenhaActivity" />
+        <activity android:name=".FilmeActivity" />
+        <activity android:name=".SessaoActivity" />
+        <activity android:name=".CinemaActivity" />
+        <activity android:name=".PesquisaActivity" />
+        <activity android:name=".ConfiguracaoActivity"></activity>
     </application>
 
 </manifest>
