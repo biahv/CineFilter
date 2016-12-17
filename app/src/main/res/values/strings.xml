@@ -16,6 +16,8 @@
     </string>
     <string name="title_activity_main">MainActivity</string>
 
+    <color name="blue">#A9D0F5</color>
+
     <string-array name="estados">
         <item></item>
         <item>AC</item>

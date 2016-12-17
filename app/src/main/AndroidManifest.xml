@@ -29,7 +29,9 @@
         <activity android:name=".SessaoActivity" />
         <activity android:name=".CinemaActivity" />
         <activity android:name=".PesquisaActivity" />
-        <activity android:name=".ConfiguracaoActivity"></activity>
+        <activity android:name=".ConfiguracaoActivity" />
+        <activity android:name=".AlterarActivity" />
+        <activity android:name=".PesquisadoActivity"></activity>
     </application>
 
 </manifest>
