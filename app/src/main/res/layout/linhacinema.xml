@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="New Text"
+    android:id="@+id/tvllvNomeC"
+    android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvllvRuaC"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Title"/>/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvllvNumeroC"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvllvBairroC"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvllvCepC"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvllvCidadeC"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvllvEstadoC"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvllvTelefoneC"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>/>
+
+</LinearLayout>

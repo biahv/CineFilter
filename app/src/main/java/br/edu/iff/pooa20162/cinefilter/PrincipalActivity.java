@@ -17,7 +17,7 @@ public class PrincipalActivity extends AppCompatActivity {
         imageCinema.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PrincipalActivity.this,CinemaActivity.class);
+                Intent intent = new Intent(PrincipalActivity.this,LVCinemaActivity.class);
                 startActivity(intent);
             }
         });
@@ -26,7 +26,7 @@ public class PrincipalActivity extends AppCompatActivity {
         imageFilme.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PrincipalActivity.this,FilmeActivity.class);
+                Intent intent = new Intent(PrincipalActivity.this,LVFilmeActivity.class);
                 startActivity(intent);
             }
         });
@@ -35,7 +35,7 @@ public class PrincipalActivity extends AppCompatActivity {
         imageSessao.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PrincipalActivity.this,SessaoActivity.class);
+                Intent intent = new Intent(PrincipalActivity.this,LVSessaoActivity.class);
                 startActivity(intent);
             }
         });

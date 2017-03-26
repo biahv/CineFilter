@@ -4,9 +4,10 @@
     android:id="@+id/activity_sessao"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/blue"
-    tools:context="br.edu.iff.pooa20162.cinefilter.SessaoActivity">
+    tools:context="br.edu.iff.pooa20162.cinefilter.SessaoActivity"
+    android:baselineAligned="false"
+    android:orientation="vertical">
 
     <TextView
         android:text="Cadastrar Sessão"
@@ -26,12 +27,11 @@
             android:layout_height="wrap_content"
             android:id="@+id/nomeFSTxt"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
-        <EditText
-            android:layout_width="wrap_content"
+        <Spinner
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/nomeFSEdt" />
+            android:id="@+id/spFilmeSessao"
+            android:layout_weight="2" />
     </LinearLayout>
 
     <LinearLayout
@@ -45,12 +45,11 @@
             android:layout_height="wrap_content"
             android:id="@+id/nomeCSTxt"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
-        <EditText
-            android:layout_width="wrap_content"
+        <Spinner
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/nomeCSEdt" />
+            android:id="@+id/spCinemaSessao"
+            android:layout_weight="2" />
     </LinearLayout>
 
     <LinearLayout
@@ -161,6 +160,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/salvarSBtn" />
+
+        <Button
+            android:text="Alterar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/alterarSBtn" />
     </LinearLayout>
 
 </LinearLayout>

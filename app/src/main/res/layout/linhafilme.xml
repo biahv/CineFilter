@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvllvNomeF"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvllvDiretorF"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Title"/>/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvllvAnoF"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvllvDataLF"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvllvClassificacaoF"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvllvGeneroF"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>/>
+
+</LinearLayout>
