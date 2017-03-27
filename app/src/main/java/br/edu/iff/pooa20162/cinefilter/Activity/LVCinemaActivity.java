@@ -1,4 +1,4 @@
-package br.edu.iff.pooa20162.cinefilter;
+package br.edu.iff.pooa20162.cinefilter.Activity;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -6,18 +6,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.content.Intent;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
 import java.util.ArrayList;
 
-import br.edu.iff.pooa20162.cinefilter.Adapter.CinemaAdapter;
-import br.edu.iff.pooa20162.cinefilter.Model.Cinema;
 import br.edu.iff.pooa20162.cinefilter.R;
+import br.edu.iff.pooa20162.cinefilter.Model.Cinema;
+import br.edu.iff.pooa20162.cinefilter.Adapter.CinemaAdapter;
 
 public class LVCinemaActivity extends AppCompatActivity {
 
@@ -70,7 +68,7 @@ public class LVCinemaActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /*protected void onResume() {
+    protected void onResume() {
         super.onResume();
         final ArrayList<Cinema> cinemas  = (ArrayList) Cinema.listAll(Cinema.class);
 
@@ -98,6 +96,6 @@ public class LVCinemaActivity extends AppCompatActivity {
             }
         });
 
-    }*/
+    }
 
 }

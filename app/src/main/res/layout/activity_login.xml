@@ -5,7 +5,7 @@
     android:background="@drawable/bg"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context="br.edu.iff.pooa20162.cinefilter.LoginActivity">
+    tools:context="br.edu.iff.pooa20162.cinefilter.Activity.LoginActivity">
 
     <!-- Login progress -->
     <ProgressBar

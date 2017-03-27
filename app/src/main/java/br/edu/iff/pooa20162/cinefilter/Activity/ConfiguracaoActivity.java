@@ -1,4 +1,4 @@
-package br.edu.iff.pooa20162.cinefilter;
+package br.edu.iff.pooa20162.cinefilter.Activity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import br.edu.iff.pooa20162.cinefilter.R;
 
 public class ConfiguracaoActivity extends AppCompatActivity {
 

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/blue"
-    tools:context="br.edu.iff.pooa20162.cinefilter.CinemaActivity">
+    tools:context="br.edu.iff.pooa20162.cinefilter.Activity.CinemaActivity">
 
     <TextView
         android:text="Cadastrar Cinema"

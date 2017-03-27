@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
-    tools:context="br.edu.iff.pooa20162.cinefilter.SessaoActivity"
+    tools:context="br.edu.iff.pooa20162.cinefilter.Activity.SessaoActivity"
     android:baselineAligned="false"
     android:orientation="vertical">
 

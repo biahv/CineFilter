@@ -58,5 +58,8 @@ public class CinemaAdapter extends ArrayAdapter<Cinema>{
         return rowView;
     }
 
-
+    @Override
+    public long getItemId(int position) {
+        return super.getItemId(position);
+    }
 }

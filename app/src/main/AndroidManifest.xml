@@ -19,7 +19,7 @@
             android:value="cinefilter.db" />
         <meta-data
             android:name="VERSION"
-            android:value="2" />
+            android:value="5" />
         <meta-data
             android:name="QUERY_LOG"
             android:value="false" />
@@ -27,9 +27,9 @@
             android:name="DOMAIN_PACKAGE_NAME"
             android:value="br.edu.iff.pooa20162.cinefilter" />
 
-        <activity android:name=".PrincipalActivity" />
+        <activity android:name=".Activity.PrincipalActivity" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".Activity.LoginActivity"
             android:label="CineFilter">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,25 +37,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NovoActivity" />
-        <activity android:name=".SenhaActivity" />
-        <activity android:name=".FilmeActivity" />
-        <activity android:name=".SessaoActivity" />
-        <activity android:name=".CinemaActivity" />
-        <activity android:name=".PesquisaActivity" />
-        <activity android:name=".ConfiguracaoActivity" />
-        <activity android:name=".AlterarActivity" />
-        <activity android:name=".PesquisadoActivity" />
+        <activity android:name=".Activity.NovoActivity" />
+        <activity android:name=".Activity.SenhaActivity" />
+        <activity android:name=".Activity.FilmeActivity" />
+        <activity android:name=".Activity.SessaoActivity" />
+        <activity android:name=".Activity.CinemaActivity" />
+        <activity android:name=".Activity.PesquisaActivity" />
+        <activity android:name=".Activity.ConfiguracaoActivity" />
+        <activity android:name=".Activity.AlterarActivity" />
+        <activity android:name=".Activity.PesquisadoActivity" />
         <activity
-            android:name=".LVCinemaActivity"
+            android:name=".Activity.LVCinemaActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".LVFilmeActivity"
+            android:name=".Activity.LVFilmeActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".LVSessaoActivity"
+            android:name=".Activity.LVSessaoActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->

@@ -1,4 +1,4 @@
-package br.edu.iff.pooa20162.cinefilter;
+package br.edu.iff.pooa20162.cinefilter.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -69,7 +69,7 @@ public class LVSessaoActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /*protected void onResume() {
+    protected void onResume() {
         super.onResume();
         final ArrayList<Sessao> sessoes  = (ArrayList) Sessao.listAll(Sessao.class);
 
@@ -96,7 +96,7 @@ public class LVSessaoActivity extends AppCompatActivity {
         });
 
 
-    }*/
+    }
 
 
 }

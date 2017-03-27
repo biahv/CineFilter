@@ -1,4 +1,4 @@
-package br.edu.iff.pooa20162.cinefilter;
+package br.edu.iff.pooa20162.cinefilter.Activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -32,6 +32,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import br.edu.iff.pooa20162.cinefilter.R;
 
 import static android.Manifest.permission.READ_CONTACTS;
 

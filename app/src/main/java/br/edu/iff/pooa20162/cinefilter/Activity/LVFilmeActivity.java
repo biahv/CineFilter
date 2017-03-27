@@ -1,4 +1,4 @@
-package br.edu.iff.pooa20162.cinefilter;
+package br.edu.iff.pooa20162.cinefilter.Activity;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,17 +12,17 @@ import android.content.Intent;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import java.util.ArrayList;
+
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-import java.util.ArrayList;
-
-import br.edu.iff.pooa20162.cinefilter.Model.Filme;
 import br.edu.iff.pooa20162.cinefilter.R;
 import br.edu.iff.pooa20162.cinefilter.Adapter.FilmeAdapter;
+import br.edu.iff.pooa20162.cinefilter.Model.Filme;
 
 import static br.edu.iff.pooa20162.cinefilter.R.*;
 
@@ -84,7 +84,7 @@ public class LVFilmeActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-   /* protected void onResume() {
+    protected void onResume() {
         super.onResume();
         final ArrayList<Filme> filmes = (ArrayList) Filme.listAll(Filme.class);
 
@@ -111,7 +111,7 @@ public class LVFilmeActivity extends AppCompatActivity {
         });
 
 
-    }*/
+    }
 
 
     /**

@@ -1,12 +1,18 @@
 package br.edu.iff.pooa20162.cinefilter.Model;
 
 import com.orm.SugarRecord;
+import com.orm.dsl.Table;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import java.util.List;
 
 /**
  * Created by bia on 25/03/17.
  */
 
-public class Cinema extends SugarRecord {
+public class Cinema extends SugarRecord implements Parcelable {
+    private Long id;
     private String nomeC;
     private String ruaC;
     private String numeroC;
@@ -25,6 +31,10 @@ public class Cinema extends SugarRecord {
         this.cidadeC = cidadeC;
         this.estadoC = estadoC;
         this.telefoneC = telefoneC;
+    }
+
+    List<Sessao> getSessao() {
+        return Sessao.find(Sessao.class, "cinema = ?", new String(getId().toString()));
     }
 
     public Cinema(){
@@ -94,4 +104,45 @@ public class Cinema extends SugarRecord {
     public void setTelefoneC(String telefoneC) {
         this.telefoneC = telefoneC;
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(nomeC);
+        dest.writeLong(id);
+
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    private Cinema(Parcel from){
+
+        id = from.readLong();
+        nomeC = from.readString();
+    }
+
+    public static final Parcelable.Creator<Cinema>
+            CREATOR = new Parcelable.Creator<Cinema>() {
+
+        public Cinema createFromParcel(Parcel in) {
+            return new Cinema(in);
+        }
+
+        public Cinema[] newArray(int size) {
+            return new Cinema[size];
+        }
+    };
+
+    @Override
+    public String toString()
+    {
+        return nomeC;
+    }
+
 }

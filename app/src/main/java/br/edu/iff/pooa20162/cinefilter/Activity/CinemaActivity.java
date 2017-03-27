@@ -1,4 +1,4 @@
-package br.edu.iff.pooa20162.cinefilter;
+package br.edu.iff.pooa20162.cinefilter.Activity;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -11,6 +11,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import br.edu.iff.pooa20162.cinefilter.Model.Cinema;
+import br.edu.iff.pooa20162.cinefilter.R;
 
 public class CinemaActivity extends Activity  {
 

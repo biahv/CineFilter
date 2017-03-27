@@ -1,4 +1,4 @@
-package br.edu.iff.pooa20162.cinefilter;
+package br.edu.iff.pooa20162.cinefilter.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -132,7 +132,7 @@ public class SessaoActivity extends AppCompatActivity {
             sessoes.save();
 
             Toast.makeText(this, "Sessão Cadastrada", Toast.LENGTH_LONG).show();
-            //this.finish();
+            this.finish();
 
         }
 
